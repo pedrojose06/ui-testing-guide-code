@@ -6,6 +6,7 @@ const config = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
+    "msw-storybook-addon",
   ],
   framework: {
     name: "@storybook/react-vite",

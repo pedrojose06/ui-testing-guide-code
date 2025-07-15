@@ -1,9 +1,15 @@
-import "../src/index.css";
+
+import '../src/index.css';
+
+import { initialize, mswLoader } from 'msw-storybook-addon';
+
+// Initialize MSW
+initialize();
 
 /** @type { import('@storybook/react').Preview } */
 const preview = {
   parameters: {
-    actions: { argTypesRegex: "^on[A-Z].*" },
+    actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
       matchers: {
         color: /(background|color)$/i,
@@ -11,6 +17,7 @@ const preview = {
       },
     },
   },
+ loaders: [mswLoader],
 };
 
 export default preview;

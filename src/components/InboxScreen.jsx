@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
-import TaskList from "./components/TaskList";
-import { useTasks } from "./useTasks";
+import TaskList from "./TaskList";
+import { useTasks } from "../useTasks";
 
 export default function InboxScreen({ error }) {
   const [tasks, dispatch] = useTasks();
